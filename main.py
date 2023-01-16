@@ -22,10 +22,33 @@ def fact(x):
 
 # Question 3
 def question3():
+    # Define the number n as an input
     n = int(input())
+    # Define d as a dictionary
     d = dict()
-    for i in range(1, n+1):
-        d[i] = i*i;
+    # The loop loops over every number between 1 and n
+    for i in range(1, n + 1):
+        d[i] = i * i;
     return d
 
-print(question3())
+
+# Question 4
+def question4(x):
+    x = x.split(",")
+    return x
+print(question4(str(input())))
+
+
+# Question 5
+class InputOutString(object):
+    def __init__(self):
+        self.s = ""
+
+    def getString(self):
+        self.s = str(input())
+
+    def printString(self):
+        print(self.s.upper())
+
+strO
+
