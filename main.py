@@ -6,16 +6,26 @@ def question1():
             li.append(str(i))
     return li
 
+
 # Question 2
 
 def fact(x):
-    #Checks if x == 0 then the code ends
+    # Checks if x == 0 then the code ends
     if x == 0:
         return 1
-    #This return is looping the code without a while loop
+    # This return is looping the code without a while loop
     return x * fact(x - 1)
-#x = int(input())
-#print(fact(x))
+
+
+# x = int(input())
+# print(fact(x))
 
 # Question 3
+def question3():
+    n = int(input())
+    d = dict()
+    for i in range(1, n+1):
+        d[i] = i*i;
+    return d
 
+print(question3())
