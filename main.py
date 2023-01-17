@@ -1,3 +1,4 @@
+import math
 # Question 1
 def question1():
     li = []
@@ -36,7 +37,9 @@ def question3():
 def question4(x):
     x = x.split(",")
     return x
-print(question4(str(input())))
+
+
+# print(question4(str(input())))
 
 
 # Question 5
@@ -50,5 +53,18 @@ class InputOutString(object):
     def printString(self):
         print(self.s.upper())
 
-strO
 
+# Question 6
+def question6():
+    C = 50
+    H = 30
+    D = input().split(",")
+    D_new = []
+    value = []
+    for i in range(0, len(D)):
+        D_new.append(int(D[i]))
+        value.append(round(math.sqrt((2*C*D_new[i])/H)))
+
+    return value
+
+#print(question6())
