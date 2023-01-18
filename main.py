@@ -69,17 +69,49 @@ def question6():
 
     return value
 
+
 # print(question6())
 
 # Question 7
 def question7():
+    # Definierar listan som en sträng och splittar
     arr = str(input("string")).split(",")
+    # Omvanndlar alla separata strängar till en integer i en loop
     dim = [int(x) for x in arr]
-    multilist = [[0 for col in range(dim[1])] for row in range(dim[1])]
+    # Skriver en nollmatris med hjälp av en list-loop
+    multilist = [[0 for col in range(dim[1])] for row in range(dim[0])]
     for i in range(0, dim[0]):
         for j in range(0, dim[1]):
+            multilist[i][j] = i * j
+    print(multilist)
 
 
+# print(question7())
+
+# Question 8
+def question8():
+    str_input = input("String").split(",")
+    str_sorted = sorted(str_input)
+    print(','.join(str_sorted))
 
 
+# print(question8())
 
+# Question 9
+def question9():
+    lines = []
+    while True:
+        str_input = str(input("String"))
+        if str_input:
+            lines.append(str_input.upper())
+        else:
+            break
+
+    print(' '.join(lines))
+
+
+# print(question9())
+
+# Question 10
+def question10():
+    str
