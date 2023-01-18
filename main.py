@@ -1,4 +1,6 @@
 import math
+
+
 # Question 1
 def question1():
     li = []
@@ -29,7 +31,7 @@ def question3():
     d = dict()
     # The loop loops over every number between 1 and n
     for i in range(1, n + 1):
-        d[i] = i * i;
+        d[i] = i * i
     return d
 
 
@@ -63,8 +65,21 @@ def question6():
     value = []
     for i in range(0, len(D)):
         D_new.append(int(D[i]))
-        value.append(round(math.sqrt((2*C*D_new[i])/H)))
+        value.append(round(math.sqrt((2 * C * D_new[i]) / H)))
 
     return value
 
-#print(question6())
+# print(question6())
+
+# Question 7
+def question7():
+    arr = str(input("string")).split(",")
+    dim = [int(x) for x in arr]
+    multilist = [[0 for col in range(dim[1])] for row in range(dim[1])]
+    for i in range(0, dim[0]):
+        for j in range(0, dim[1]):
+
+
+
+
+
