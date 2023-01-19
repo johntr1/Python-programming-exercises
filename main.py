@@ -126,5 +126,91 @@ def question10():
     l = list(s)
     print(" ".join(l))
 
-print(question10())
+
+# print(question10())
+
+# Question 11
+def question11():
+    num = input().split(",")
+    li = []
+    for i in range(0, len(num)):
+        if int(num[i], 2) % 5 == 0:
+            li.append(num[i])
+    print(','.join(li))
+
+
+# print(question11())
+
+# Question 12
+def question12():
+    li = []
+    for i in range(1000, 3001):
+        if i % 2 == 0:
+            li.append(str(i))
+    print(','.join(li))
+
+
+# print(question12())
+
+
+# Question 13
+def question13():
+    inp = str(input())
+    d = {"LETTERS": 0, "DIGITS": 0}
+    for i in range(0, len(inp)):
+        if inp[i].isdigit():
+            d['DIGITS'] += 1
+        elif inp[i].isalpha():
+            d['LETTERS'] += 1
+
+    print('LETTERS', d['LETTERS'], 'DIGITS', d['DIGITS'])
+
+
+# print(question13())
+
+# Question 14
+def question14():
+    inp = str(input())
+    d = {"UPPER CASE": 0, "LOWER CASE": 0}
+    for i in range(0, len(inp)):
+        if inp[i].isupper():
+            d['UPPER CASE'] += 1
+        elif inp[i].islower():
+            d['LOWER CASE'] += 1
+
+    print('UPPER CASE', d['UPPER CASE'], 'LOWER CASE', d['LOWER CASE'])
+
+
+# print(question14())
+
+
+# Question 15
+
+def question15():
+    inp = str(input())
+    value = 0
+    for i in range(0, 4):
+        value = value + int(inp * (i + 1))
+
+    print(value)
+
+# print(question15())
+
+
+# Question 16
+def question16():
+    inp = input().split(',')
+    li = []
+    for i in range(0, len(inp)):
+        if int(inp[i]) % 2 != 0:
+            li.append(inp[i])
+
+    print(','.join(li))
+
+#print(question16())
+
+
+
+
+
 
