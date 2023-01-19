@@ -114,8 +114,17 @@ def question9():
 
 # Question 10
 def question10():
-    list = []
+    li = []
     while True:
         s = str(input("Str"))
-        if s and
+        if s:
+            li.append(s)
+        else:
+            break
+
+    s = set(li)
+    l = list(s)
+    print(" ".join(l))
+
+print(question10())
 
