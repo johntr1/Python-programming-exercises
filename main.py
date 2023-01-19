@@ -114,4 +114,8 @@ def question9():
 
 # Question 10
 def question10():
-    str
+    list = []
+    while True:
+        s = str(input("Str"))
+        if s and
+
