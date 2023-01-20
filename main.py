@@ -204,10 +204,10 @@ def question16():
     for i in range(0, len(inp)):
         if int(inp[i]) % 2 != 0:
             li.append(inp[i])
-
     print(','.join(li))
 
-#print(question16())
+
+print(question16())
 
 
 
