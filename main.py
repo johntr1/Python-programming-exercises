@@ -194,6 +194,7 @@ def question15():
 
     print(value)
 
+
 # print(question15())
 
 
@@ -207,10 +208,23 @@ def question16():
     print(','.join(li))
 
 
-print(question16())
+# print(question16())
+
+# Question 17
+
+def question17():
+    inp = input().split(' ')
+    deposit = 0
+    withdraw = 0
+    for i in range(len(inp)):
+        if inp[i] == 'D':
+            deposit += int(inp[i + 1])
+        elif inp[i] == 'W':
+            withdraw += int(inp[i + 1])
+        else:
+            pass
+
+    print(f'D {deposit} W {withdraw}')
 
 
-
-
-
-
+print(question17())
